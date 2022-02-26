@@ -24,5 +24,10 @@ to visualize the data.
   - The logo of the university on the upper left.
   - A refresh button on the upper right.
   - A main space that contains the five charts.
+ 
+ </br>
+ </br>
 
 ![Dashboard](Dashboard.JPG)
+
+    **UNIVERSITY DASHBOARD**
