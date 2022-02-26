@@ -30,4 +30,4 @@ to visualize the data.
 
 ![Dashboard](Dashboard.JPG)
 
-    **UNIVERSITY DASHBOARD**
+                                                                           **UNIVERSITY DASHBOARD**
