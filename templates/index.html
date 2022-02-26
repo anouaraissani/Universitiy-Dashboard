@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>	
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	</head>
+	<body>
+		<div class="grid-container">
+		  <header class="header">
+			<p id="dash-title">
+				Dashboard PARAVAN UNIVERSITY 2022
+			</p>
+			<button id="btn_refresh" onclick="loadData()">
+				Actualiser
+			</button>
+		  </header>
+		  <aside class="sidenav">		
+			<div id="logo">
+				<img src="{{url_for('static', filename='img/logo.png')}}" height="40px" width="40px"/>
+				<p style="display:inline">PRAVAN UNIVERSITY</p>
+			</div>			
+			<div id="menu">
+				<div><p>Summary</p></div>
+				<div><p>Add</p></div>
+				<div><p>Details</p></div>
+				<div><p>Logout</p></div>
+			</div>		
+		  </aside>
+		  <main class="main">
+			<div class="card" id="card1">	
+				<div class="card-header">
+					<p>Pie Chart: Le nombre d'étudiants "ADMIS" par années</p>
+				</div>
+				<div class="card-content">	
+					<canvas id="pie-chart" height="200" width="380"></canvas>
+				</div>
+			</div>
+			<div class="card" id="card5">	
+				<div class="card-header">
+					<p>Pie Chart: Le nombre d'étudiants "NON ADMIS" par années</p>
+				</div>
+				<div class="card-content">	
+					<canvas id="pie2-chart" height="200" width="380"></canvas>
+				</div>
+			</div>
+			<div class="card" id="card2">	
+				<div class="card-header">
+					<p>Bar Chart: Le nombre d'étudiants par années</p>
+				</div>
+				<div class="card-content">	
+					<canvas id="bar-chart" height="220" width="380"></canvas>
+				</div>				
+			</div>
+			<div class="card" id="card3">	
+				<div class="card-header">
+					<p>Line Chart: L'évolution du nombre d'étudiants dans une spécialité, par années</p>
+				</div>
+				<div class="card-content" >
+					<canvas id="line-chart" height="230" width="800"></canvas>
+				</div>
+			</div>
+			<div class="card" id="card4">		
+				<div class="card-header">
+					<p>Grouped Bars Chart: Le nombre d'étudiants par sexe, années</p>
+				</div>
+				<div class="card-content" >
+					<canvas id="groupedBars-chart" height="210" width="400"></canvas>	
+				</div>
+			</div>
+		  </main>
+		  <footer class="footer"></footer>
+		</div>
+		
+		<script src="{{url_for('static', filename='script.js')}}"></script>
+	</body>
+</html>
